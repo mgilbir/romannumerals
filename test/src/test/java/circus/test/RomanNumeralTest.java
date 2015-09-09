@@ -19,4 +19,9 @@ public class RomanNumeralTest {
 
         Assert.assertEquals(2015, roman.toInt());
     }
+    
+    @Test
+    public void testFail() {
+        Assert.assertEquals(2015, 2014);
+    }
 }
