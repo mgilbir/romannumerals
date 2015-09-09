@@ -15,10 +15,10 @@ public class RomanNumeral {
             the number numbers[i] is represented by the corresponding string, letters[i].
          */
 
-    private static int[]    numbers = { 1000,  900,  500,  400,  100,   90,
+    private static int[]    numbers = { 999,  900,  500,  400,  100,   90,
             50,   40,   10,    9,    5,    4,    1 };
 
-    private static String[] letters = { "mil",  "CM",  "D",  "CD", "C",  "XC",
+    private static String[] letters = { "N",  "CM",  "D",  "CD", "C",  "XC",
             "L",  "XL",  "X",  "IX", "V",  "IV", "I" };
 
     /**
@@ -103,7 +103,7 @@ public class RomanNumeral {
             case 'L':  return 50;
             case 'C':  return 100;
             case 'D':  return 500;
-            case 'M':  return 1000;
+            case 'M':  return 999;
             default:   throw new NumberFormatException(
                     "Illegal character \"" + letter + "\" in Roman numeral");
         }
